@@ -1,6 +1,6 @@
 {
   "name": "@keystone-next/keystone",
-  "version": "11.0.0",
+  "version": "11.0.1",
   "license": "MIT",
   "main": "dist/keystone.cjs.js",
   "module": "dist/keystone.esm.js",
@@ -17,7 +17,7 @@
     "@hapi/iron": "^5.1.4",
     "@keystone-next/adapter-knex-legacy": "^13.1.0",
     "@keystone-next/adapter-mongoose-legacy": "^11.1.0",
-    "@keystone-next/adapter-prisma-legacy": "3.1.0",
+    "@keystone-next/adapter-prisma-legacy": "3.2.0",
     "@keystone-next/admin-ui": "^10.0.0",
     "@keystone-next/app-graphql-legacy": "^6.2.2",
     "@keystone-next/fields": "^5.1.0",

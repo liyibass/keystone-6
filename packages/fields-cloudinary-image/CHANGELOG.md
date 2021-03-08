@@ -1,5 +1,11 @@
 # @keystonejs/fields-cloudinary-image
 
+## 3.0.0
+
+### Major Changes
+
+- [`afccc27ea`](https://github.com/keystonejs/keystone/commit/afccc27eaa3a0574fa326dcc791526c4ac8f5e43) [#5036](https://github.com/keystonejs/keystone/pull/5036) Thanks [@timleslie](https://github.com/timleslie)! - Remove support for `fields-content` blocks.
+
 ## 2.1.5
 
 ### Patch Changes

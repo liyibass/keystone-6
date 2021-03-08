@@ -1,5 +1,12 @@
 # @keystone-next/keystone
 
+## 11.0.1
+
+### Patch Changes
+
+- Updated dependencies [[`7bb173018`](https://github.com/keystonejs/keystone/commit/7bb173018afc6d8af4c602dc86c5c4b471277b97)]:
+  - @keystone-next/adapter-prisma-legacy@3.2.0
+
 ## 11.0.0
 
 ### Major Changes

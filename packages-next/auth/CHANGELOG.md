@@ -1,5 +1,14 @@
 # @keystone-next/auth
 
+## 16.0.1
+
+### Patch Changes
+
+- [`29a970378`](https://github.com/keystonejs/keystone/commit/29a9703786728c9b8b6cdef71e087e604099d257) [#5011](https://github.com/keystonejs/keystone/pull/5011) Thanks [@timleslie](https://github.com/timleslie)! - Updated internals to allow for easier documentation.
+
+- Updated dependencies []:
+  - @keystone-next/keystone@11.0.1
+
 ## 16.0.0
 
 ### Major Changes
