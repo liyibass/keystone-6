@@ -68,9 +68,8 @@ function getEntryFileFullPath(args, { exeName, _cwd }) {
   }
 }
 
-function extractAppMeta(apps, dev) {
+function extractAppMeta(apps) {
   let adminPath;
-  let graphiqlPath;
   let apiPath;
 
   apps.forEach(app => {
@@ -81,7 +80,6 @@ function extractAppMeta(apps, dev) {
       }
       case 'GraphQLApp': {
         apiPath = app._apiPath;
-        graphiqlPath = dev ? app._graphiqlPath : undefined;
         break;
       }
     }
@@ -89,7 +87,6 @@ function extractAppMeta(apps, dev) {
 
   return {
     adminPath,
-    graphiqlPath,
     apiPath,
   };
 }
@@ -164,11 +161,10 @@ async function executeDefaultServer(args, entryFile, distDir, spinner) {
   app.use(middlewares);
   status = 'started';
   spinner.succeed(chalk.green.bold(`Keystone instance is ready at http://localhost:${port} 🚀`));
-  const { adminPath, graphiqlPath, apiPath } = extractAppMeta(apps, dev);
+  const { adminPath, apiPath } = extractAppMeta(apps);
 
   /* eslint-disable no-unused-expressions */
   adminPath && ttyLink('Keystone Admin UI:', adminPath, appUrl);
-  graphiqlPath && ttyLink('GraphQL Playground:', graphiqlPath, appUrl);
   apiPath && ttyLink('GraphQL API:\t', apiPath, appUrl);
   /* eslint-enable no-unused-expressions */
 
